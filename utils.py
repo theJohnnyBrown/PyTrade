@@ -62,6 +62,9 @@ def leave_r(n,l):
     return result
 
 def roi(i_f):
+    """gives the return on investment from i_f[0] to i_f[1] (difference divided by initial investment, or percent change between the two values) """
+    return (i_f[1]-float(i_f[0]))/i_f[0]
+
     return (i_f[1]-float(i_f[0]))/i_f[0]
 
 def roistar(*args):
