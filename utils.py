@@ -1,3 +1,4 @@
+import datetime
 import collections
 from itertools import *
 
@@ -102,3 +103,7 @@ def consume(iterator, n):
     else:
         # advance to the empty slice starting at position n
         next(islice(iterator, n, n), None)
+
+def date_from(datestring):
+    when = [int(el) for el in datestring.strip().split('-') ]
+    return datetime.date(*when)
